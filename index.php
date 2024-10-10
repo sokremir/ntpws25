@@ -18,7 +18,7 @@ $headers = [
     "Welcome to Our Awesome Website!",
     "Explore the World of Coding",
     "Your Gateway to Learning",
-    "Innovate and Create E",
+    "InnovatÍgit  and Createe Eeeeee",
     "Discover Endless Possibilities"
 ];
 
