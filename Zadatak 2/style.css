@@ -2,24 +2,24 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 header {
-    position: relative; /* ili absolute, ovisno o dizajnu */
-    background-color: #4CAF50;
+    position: relative; 
+    background-color: darkgray;
     color: white;
     padding: 20px;
     text-align: center;
 }
 #banner {
-    width: 100%; /* ili postavite neku specifičnu širinu */
-    height: 150px; /* visina bannera */
+    width: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* skrivanje viška sadržaja */
+    overflow: hidden;
 }
 #banner img {
-    width: 100%; /* prilagodite širinu slike */
-    height: auto; /* automatski prilagodite visinu */
+    width: 100%;
+    height: auto;
 }
 nav {
     margin-top: 15px;
