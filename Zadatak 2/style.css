@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    position: relative; /* ili absolute, ovisno o dizajnu */
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#banner {
+    width: 100%; /* ili postavite neku specifičnu širinu */
+    height: 150px; /* visina bannera */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* skrivanje viška sadržaja */
+}
+#banner img {
+    width: 100%; /* prilagodite širinu slike */
+    height: auto; /* automatski prilagodite visinu */
+}
+nav {
+    margin-top: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
