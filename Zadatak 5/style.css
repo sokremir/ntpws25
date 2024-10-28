@@ -141,6 +141,11 @@ footer {
     color: #333;
 }
 
+.naslov-clanka h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
 .naslov-clanka p {
     font-size: 0.95em;
     line-height: 1.5;
