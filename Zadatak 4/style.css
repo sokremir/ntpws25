@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -54,12 +56,26 @@ img {
 figure {
     margin: 20px;
     text-align: center;
-    width: 25%;
-    float: left;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+main {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 footer {
-    background-color: #f0f0f0;
+    color: white;
+    background-color: #333;
     padding: 20px 0;
     text-align: center;
 }
@@ -67,20 +83,21 @@ footer {
 .linkoviFooter {
     display: flex;
     justify-content: space-around;
-    max-width: 600px;
+    max-width: 80%;
     margin: 0 auto 20px;
 }
 
 .footer-link {
     display: flex;
-    flex-direction:row; row;
+    width: 25%;
+    flex-direction:column;
     align-items: center;
     text-decoration: none;
     color: #333;
 }
 
 .footer img {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: auto;
     margin-bottom: 5px;
 }
