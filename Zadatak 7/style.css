@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    position: relative;
+    background-color: darkgray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#banner {
+    width: absolute;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 75%;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+p {
+    padding: auto;
+    margin: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+figure {
+    margin: 20px;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+main {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+footer {
+    color: white;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.linkoviFooter {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto 20px;
+}
+
+.footer-link {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.lista-clanaka {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.clanak {
+    flex-basis: 30%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.slika-clanka img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.podaci-clanka {
+    padding: 2%;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.naslov-clanka {
+    padding: 0 15px 15px;
+}
+
+.naslov-clanka h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.naslov-clanka h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.naslov-clanka p {
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .clanak {
+        flex-basis: 43%;
+    }
+}
+
+@media (max-width: 480px) {
+    .clanak {
+        flex-basis: 100%;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery-item {
+    height: 300PX;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200PX;
+    object-fit: cover;
+    display: block;
+}
+
+.infobar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.karta {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-grupa {
+    margin-bottom: 20px;
+}
+
+.form-grupa label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-grupa input,
+.form-grupa textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-grupa textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
