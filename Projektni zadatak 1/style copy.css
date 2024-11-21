@@ -1,0 +1,433 @@
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .clanak {
+        flex-basis: 43%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .clanak {
+        flex-basis: 30%;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    position: relative;
+    background-color: darkgray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* NAVIGACIJA */
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    flex: 1;
+}
+
+.nav-logo img {
+    height: 40px;
+    width: 100px;
+}
+
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.nav-admin {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-admin a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.nav-admin a:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-logo, .nav-links, .nav-admin {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-links, .nav-admin {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links a, .nav-admin a {
+        margin: 5px 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+figure {
+    margin: 20px;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+main {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+footer {
+    color: white;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.linkoviFooter {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto 20px;
+}
+
+.footer-link {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.lista-clanaka {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.clanak {
+    flex-basis: 100%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.slika-clanka img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.podaci-clanka {
+    padding: 2%;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.naslov-clanka {
+    padding: 0 15px 15px;
+}
+
+.naslov-clanka h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.naslov-clanka h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.naslov-clanka p {
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery-item {
+    height: 300px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Tablet view */
+@media screen and (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop view */
+@media screen and (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.infobar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.karta {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-grupa {
+    margin-bottom: 20px;
+}
+
+.form-grupa label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-grupa input,
+.form-grupa textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-grupa textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Add these styles to your existing CSS */
+
+.food-menu {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.food-menu th, .food-menu td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.food-menu th {
+    background-color: #f2f2f2;
+}
+
+.food-menu img {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.food-menu .total {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.exchange-rate {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.exchange-rate h4 {
+    margin-top: 0;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.featured-dish {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+.featured-dish img {
+    max-width: 100%;
+    height: auto;
+}
+#banner {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.banner-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.menu-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #45a049;
+}
+@media (max-width: 768px) {
+    #banner {
+        height: 300px;
+    }
+
+    .banner-content h2 {
+        font-size: 2em;
+    }
+
+    .banner-content p {
+        font-size: 1em;
+    }
+}
